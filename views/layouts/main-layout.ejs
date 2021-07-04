@@ -20,6 +20,10 @@
           font: 32px Viga;
       }
 
+      .kebawah {
+        position: fixed;
+      }
+
       .kinoy ul li {
         display: flex;
         flex-direction: column;
@@ -55,7 +59,7 @@
       .jumbotron {
           background: url(/images/pexels-chan-walrus-958545.jpg);
           background-size: cover;
-          height: 540px;
+          height: 400px;
           position: relative;
           z-index: -1;
           margin-bottom: 0;
@@ -81,9 +85,9 @@
       .jumbotron .display-4 {
           font-weight: 200;
           font-size: 1.6em;
-          margin-top: 100px;
+          margin-top: 15px;
           text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-          margin-bottom: 50px;
+          margin-bottom: 30px;
           background-color: rgba(74, 85, 95, 0.637);
           padding: 23px 25px;
           border-radius: 40px;
@@ -278,12 +282,16 @@
     <%- include('nav') %> 
      
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="position: relative;">
+      <!-- scroll -->
+      <div class="kebawah w3-padding w3-white w3-text-orange w3-hide" style="position: absolute; z-index: 990; right: 35%; top: 60%; ">
+        <span class="w3-small fw-bold">Scroll ke bawah</span> <img src="images/bottom.png" alt="">
+      </div>
       <div class="container">
         <h1 class="display-4">Yang ditunggu-tunggu telah tiba!!! <br>
           <span>Cafe Center Point</span> 
           segera buka tanggal <span>07-07-2021</span>. Ada <span>voucher makan gratis</span> dan <span>diskon 50%</span>. <br>
-          Jangan sampe ketinggalan ya..</h1>
+          Jangan sampe ketinggalan!</h1>
         <a href='' class="btn btn-info btn-lg tombol days">Launching dalam <%= days %> lagi</a>
       </div>
     </div>
